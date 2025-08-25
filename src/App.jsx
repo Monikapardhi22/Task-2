@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import { Link, Route, Routes,useLocation  } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './Header/Hero';
@@ -6,7 +6,7 @@ import Hero from './Header/Hero';
 import Read from './Header/Read';
 import Edit from './Header/Edit';
 
-import wix from "./assets/wix.jpeg";
+// import wix from "./assets/wix.jpeg";
 import first from './assets/first.avif';
 import second from './assets/pic2.png';
 import thrid from './assets/pic3.avif';
@@ -32,29 +32,29 @@ export default function App() {
     // autoplaySpeed: 2000,
     cssEase: "linear",
   };
-  const [selectedView, setSelectedView] = useState("desktop");
+  // const [selectedView, setSelectedView] = useState("desktop");
   
   const location = useLocation(); //
     const isRouteView = ['/wix', '/read', '/edit'].includes(location.pathname);
 
   // 🔹 Mobile toggle class
   const getViewClass = () => {
-    if (selectedView === "mobile" ) {
-      return "w-full max-w-md mx-auto rounded-[30px] shadow-lg mt-6 overflow-y-auto  overflow-x-hidden bg-white z-20 relative p-4 border-2 border-t-[100px] border-gray-300 lg:border-4 lg:border-t-[100px] lg:max-w-lg xl:max-w-[400px]";
-    }
+    // if (selectedView === "mobile" ) {
+    //   return "w-full max-w-md mx-auto rounded-[30px] shadow-lg mt-6 overflow-y-auto  overflow-x-hidden bg-white z-20 relative p-4 border-2 border-t-[100px] border-gray-300 lg:border-4 lg:border-t-[100px] lg:max-w-lg xl:max-w-[400px]";
+    // }
     return "w-full";
   };
 
   return (
     <div className="relative w-full">
       {/* Header */}
-      <div className='h-[72px] w-full flex justify-around items-center shadow-md bg-white fixed top-0 z-30 px-6'>
+      {/* <div className='h-[72px] w-full flex justify-around items-center shadow-md bg-white fixed top-0 z-30 px-6'>
        
           <img src={wix} alt="wix" className='h-[50px] w-[100px] p-[12px] cursor-pointer' />
         
 
         {/* Device Selector */}
-        <div className='text-gray-400 font-light text-2xl flex flex-row'>
+        {/* <div className='text-gray-400 font-light text-2xl flex flex-row'>
           <li
             className='list-none p-[12px] cursor-pointer border-r-[1px] border-gray-400'
             onClick={() => setSelectedView('desktop')}
@@ -75,17 +75,32 @@ export default function App() {
         </p>
         <Link to='/read' className='underline font-[400] text-gray-600 hidden sm:block'>Read More</Link>
         <Link to='/edit' className='  relative z-40 rounded-[30px] text-white bg-blue-500 p-[10px] text-center sm:block'>Edit this site</Link>
-      </div>
+      </div> */} 
+        {/* <div className='text-gray-400 font-light text-2xl flex flex-row'>
+          <li
+            className='list-none p-[12px] cursor-pointer border-r-[1px] border-gray-400'
+            onClick={() => setSelectedView('desktop')}
+          >
+            <i className="fa-solid fa-laptop"></i>
+          </li>
+
+          <li
+            onClick={() => setSelectedView('mobile')}
+            className='list-none p-[12px] cursor-pointer'
+          >
+            <i className="fa-solid fa-mobile-screen"></i>
+          </li>
+        </div> */}
 
       {/* Overlay for mobile */}
-      {selectedView === "mobile" && window.innerWidth <= 700 && (
+      {/* {selectedView === "mobile" && window.innerWidth <= 700 && (
         <div className="fixed top-0 left-0 w-full  bg-white opacity-60 z-20 md:block lg:block overflow-auto"></div>
-      )}
+      )} */}
 
       {/* Content Area */}
       {!isRouteView && ( <div
-        id={selectedView === "mobile" ? "mobile-view" : "desktop-view"}
-        className={`mx-auto border-0 ${getViewClass()} mt-[72px] overflow-x-hidden overflow-y-auto overflow-visible md:p-0 md:w-[1200px] lg:w-[1510px]`}
+        // id={selectedView === "mobile" ? "mobile-view" : "desktop-view"}
+        className={`mx-auto border-0 ${getViewClass()} mt-[72px] overflow-x-hidden overflow-y-auto overflow-visible md:p-0 w-full  max-w-screen-lg max-w-screen-xl`}
       >
         {/* Navbar */}
         <div className='mb-6 w-full'>
