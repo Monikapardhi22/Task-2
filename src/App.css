@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@700&family=Pacifico&family=Playfair+Display:wght@700&family=Poppins:wght@700&family=Raleway:wght@700&display=swap');
+
+.container {
+  text-align: center;
+  padding-top: 50px;
+  background: #f5f5f5;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
+  color: #0078ff;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+  color: #ff4081;
+}
+
+.lobster {
+  font-family: 'Lobster', cursive;
+  color: #e91e63;
+}
+
+.pacifico {
+  font-family: 'Pacifico', cursive;
+  color: #009688;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+  color: #3f51b5;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+  color: #ff9800;
+}
