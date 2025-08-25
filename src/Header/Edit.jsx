@@ -7,9 +7,9 @@ import facebook from '../assets/facebook.webp'
 export default function Edit() {
   return (
     <div className='m-32'>
-       <Link to='/wix'>
+       <a href='www.wix.com'>
             <img src={wix} alt="wix" height='50px' width='100px' className='p-[12px] xl:mr-[260px] md:h-[50px] md:w-[100px] ml-7' />
-          </Link>
+          </a>
 
           <div className='mt-5 '>
             <div className='flex flex-col justify-center items-center'>
