@@ -46,7 +46,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-[100%]">
       {/* Header */}
       {/* <div className='h-[72px] w-full flex justify-around items-center shadow-md bg-white fixed top-0 z-30 px-6'>
        
@@ -100,7 +100,7 @@ export default function App() {
       {/* Content Area */}
       {!isRouteView && ( <div
         // id={selectedView === "mobile" ? "mobile-view" : "desktop-view"}
-        className={`mx-auto border-0 ${getViewClass()} mt-[72px] overflow-x-hidden overflow-y-auto overflow-visible md:p-0 w-full  max-w-screen-lg max-w-screen-xl`}
+        className={`mx-auto border-0 ${getViewClass()} mt-[72px] overflow-x-hidden overflow-y-auto overflow-visible md:p-0 w-full  lg:w-[100%]`}
       >
         {/* Navbar */}
         <div className='mb-6 w-full'>
