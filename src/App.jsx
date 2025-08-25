@@ -49,9 +49,9 @@ export default function App() {
     <div className="relative w-full">
       {/* Header */}
       <div className='h-[72px] w-full flex justify-around items-center shadow-md bg-white fixed top-0 z-30 px-6'>
-        <a href='www.wix.com'>
-          <img src={wix} alt="wix" className='h-[50px] w-[100px] p-[12px]' />
-        </a>
+       
+          <img src={wix} alt="wix" className='h-[50px] w-[100px] p-[12px] cursor-pointer' />
+        
 
         {/* Device Selector */}
         <div className='text-gray-400 font-light text-2xl flex flex-row'>
